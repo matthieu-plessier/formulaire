@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Exercice 7 Formulaire</title>
+</head>
+<body>
+
+    
+        <form>
+            <fieldset class="identity"><legend class="titleIdentity">Votre identité</legend>
+            <ol>
+                <li>Nom :<input type="text" size="10" maxlength="40" name="name" placeholder="Votre Nom"></li> 
+                <li>Prénom :<input type="text" size="10" maxlength="40" name="surname" placeholder="Votre Prénom"></li>
+                <li>Adresse mail :<input type="text" size="10" maxlength="40" name="mail" placeholder="Votre mail"></li>
+            </ol>
+        </fieldset>
+        </form>
+
+  
+
+
+        <fieldset class="adress"><legend class="titleAdress">Adresse de livraison</legend>
+        <form>
+            
+            <ol>
+                <li>Adresse :<textarea arows="5" cols="" name="text"></textarea></li>
+                <li>Code Postal :<input type="text" size="10" maxlength="40" name="number" ></li>
+                <li>Ville :<input type="text" size="10" maxlength="40" name="town" ></li>
+            </ol>
+        </fieldset>
+        </form> 
+    </div>
+        
+
+        <fieldset class="payment"><legend class="titlePayment">Informations de réglement</legend>
+        <form>
+            
+            <ol>
+                <li>Type de carte bancaire :</li>
+                    <input checked="checked" name="sex" type="radio" value="Visa" /> Visa <br /> 
+                    <input name="sex" type="radio" value="Mastercard" /> Mastercard <br /> 
+                    <li>Numéro de carte :<input type="text" size="10" maxlength="40" name="numberCard" ></li>
+                    <li>Code de sécurité :<input type="text" size="10" maxlength="40" name="securityCode" ></li>
+                    <li>Nom du titulaire :<input type="text" size="10" maxlength="40" name="nameCard" ></li>
+            </ol>
+        </fieldset>
+        </form>
+
+    </div>
+    <button type="submit" value="Submit">j'achète !</button></form>
+    
+</body>
+</html>

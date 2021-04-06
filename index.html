@@ -9,48 +9,40 @@
 </head>
 <body>
 
-    
+    <!-- formulaire partie ID -->
         <form>
             <fieldset class="identity"><legend class="titleIdentity">Votre identité</legend>
             <ol>
-                <li>Nom :<input type="text" size="10" maxlength="40" name="name" placeholder="Votre Nom"></li> 
-                <li>Prénom :<input type="text" size="10" maxlength="40" name="surname" placeholder="Votre Prénom"></li>
-                <li>Adresse mail :<input type="text" size="10" maxlength="40" name="mail" placeholder="Votre mail"></li>
+                <li><label for ="nom">Nom :</label><input id ="nom" type="text" size="10" maxlength="40" name="name" placeholder="Votre Nom"></li> 
+                <li><label for ="prénom">Prénom :</label><input id ="prénom" type="text" size="10" maxlength="40" name="surname" placeholder="Votre Prénom"></li>
+                <li><label for ="adresseMail">Adresse mail :</label><input id ="adresseMail" type="text" size="10" maxlength="40" name="mail" placeholder="Votre mail"></li>
             </ol>
-        </fieldset>
+            </fieldset>
+            <!-- formaulaire partie adresse -->
         </form>
-
-  
-
-
-        <fieldset class="adress"><legend class="titleAdress">Adresse de livraison</legend>
+            <fieldset class="adress"><legend class="titleAdress">Adresse de livraison</legend>
         <form>
-            
             <ol>
-                <li>Adresse :<textarea arows="5" cols="" name="text"></textarea></li>
-                <li>Code Postal :<input type="text" size="10" maxlength="40" name="number" ></li>
-                <li>Ville :<input type="text" size="10" maxlength="40" name="town" ></li>
+                <li><label for="adresse">Adresse :</label><textarea rows="5" cols="" name="text" id="adresse"></textarea></li>
+                <li><label for="codePostal">Code Postal :</label><input id ="codePostal" type="text" size="10" maxlength="40" name="number" ></li>
+                <li><label for="ville">Ville :</label><input id="ville" type="text" size="10" maxlength="40" name="town" ></li>
             </ol>
-        </fieldset>
+            </fieldset>
+            <!-- formulaire partie réglement -->
         </form> 
-    </div>
-        
-
-        <fieldset class="payment"><legend class="titlePayment">Informations de réglement</legend>
+            <fieldset class="payment"><legend class="titlePayment">Informations de réglement</legend>
         <form>
-            
             <ol>
                 <li>Type de carte bancaire :</li>
-                    <input checked="checked" name="sex" type="radio" value="Visa" /> Visa <br /> 
-                    <input name="sex" type="radio" value="Mastercard" /> Mastercard <br /> 
-                    <li>Numéro de carte :<input type="text" size="10" maxlength="40" name="numberCard" ></li>
-                    <li>Code de sécurité :<input type="text" size="10" maxlength="40" name="securityCode" ></li>
-                    <li>Nom du titulaire :<input type="text" size="10" maxlength="40" name="nameCard" ></li>
+                <input name="sex" type="radio" value="Visa" /> Visa <br /> 
+                <input name="sex" type="radio" value="Mastercard" /> Mastercard <br /> 
+                <li><label for="cardNumber">Numéro de carte :</label><input id ="cardNumber" type="text" size="10" maxlength="40" name="numberCard" ></li>
+                <li><label for="securityCode">Code de sécurité :</label><input id="securityCode" type="text" size="10" maxlength="40" name="securityCode" ></li>
+                <li><label for="cardName">Nom du titulaire :</label><input id="cardName" type="text" size="10" maxlength="40" name="nameCard" ></li>
             </ol>
-        </fieldset>
+            </fieldset>
         </form>
-
-    </div>
+        <!-- bouton de validation -->
     <button type="submit" value="Submit">j'achète !</button></form>
     
 </body>
